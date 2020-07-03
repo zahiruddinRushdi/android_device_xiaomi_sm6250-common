@@ -28,4 +28,6 @@
   <!-- Ultra Power Saving -->
   <bool name="config_supportUltraPowerSaving">false</bool>
 
+  <!-- Device specific doze package -->
+  <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>
