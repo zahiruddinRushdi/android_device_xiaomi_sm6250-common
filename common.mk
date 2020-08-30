@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
