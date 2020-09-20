@@ -17,6 +17,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
+        android:key="audio"
+        android:title="@string/audio_title">
+
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference 
+            android:defaultValue="false"
+            android:key="mi_enabled" 
+            android:summary="@string/mi_summary" 
+            android:icon="@drawable/ic_misound"
+            android:title="@string/mi_title" />
+
+        <com.xiaomi.parts.preferences.SecureSettingListPreference 
+            android:defaultValue="0"
+            android:dependency="mi_enabled" 
+            android:entries="@array/mi_headset_pref_entries" 
+            android:entryValues="@array/mi_headset_pref_values" 
+            android:key="mi_headset_pref"
+            android:summary="%s" 
+            android:icon="@drawable/ic_headphone"
+            android:title="@string/mi_headset_title" />
+
+        <com.xiaomi.parts.preferences.SecureSettingListPreference 
+            android:defaultValue="0,0,0,0,0,0,0" 
+            android:dependency="mi_enabled" 
+            android:entries="@array/mi_preset_pref_entries" 
+            android:entryValues="@array/mi_preset_pref_values" 
+            android:key="mi_preset_pref"
+            android:summary="%s" 
+            android:icon="@drawable/ic_preset"
+            android:title="@string/mi_preset_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="boost"
+        android:title="@string/boost_title" >
+
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference 
+            android:key="touchboost" android:defaultValue="false" 
+            android:title="@string/touchboost_title" 
+            android:icon="@drawable/ic_boost" 
+            android:summary="@string/touchboost_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="display"
         android:title="@string/display_title">
 
@@ -39,18 +84,6 @@
             android:summary="@string/fps_info_summary"
             android:persistent="true" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="boost"
-        android:title="@string/boost_title" >
-
-        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="touchboost"
-            android:defaultValue="false"
-            android:title="@string/touchboost_title"
-            android:icon="@drawable/ic_boost"
-            android:summary="@string/touchboost_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -93,50 +126,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="audio"
-        android:title="@string/audio_title">
-
-        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="mi_enabled"
-            android:summary="@string/mi_summary"
-            android:icon="@drawable/ic_misound"
-            android:title="@string/mi_title" />
-
-        <com.xiaomi.parts.preferences.SecureSettingListPreference
-            android:defaultValue="0"
-            android:dependency="mi_enabled"
-            android:entries="@array/mi_headset_pref_entries"
-            android:entryValues="@array/mi_headset_pref_values"
-            android:key="mi_headset_pref"
-            android:summary="%s"
-            android:icon="@drawable/ic_headphone"
-            android:title="@string/mi_headset_title" />
-
-        <com.xiaomi.parts.preferences.SecureSettingListPreference
-            android:defaultValue="0,0,0,0,0,0,0"
-            android:dependency="mi_enabled"
-            android:entries="@array/mi_preset_pref_entries"
-            android:entryValues="@array/mi_preset_pref_values"
-            android:key="mi_preset_pref"
-            android:summary="%s"
-            android:icon="@drawable/ic_preset"
-            android:title="@string/mi_preset_title" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="usb_fastcharge"
-        android:title="@string/usb_fastcharge_title" >
-    <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
-            android:key="fastcharge"
-            android:defaultValue="true"
-            android:title="@string/fastcharge_title"
-            android:icon="@drawable/ic_usb_fastcharge"
-            android:summary="@string/fastcharge_summary" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="selinux"
         android:title="@string/selinux_category">
 
@@ -157,6 +146,19 @@
         android:summary="@string/selinux_persistence_summary"
         android:defaultValue="true"
         android:icon="@drawable/ic_power" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="usb_fastcharge"
+        android:title="@string/usb_fastcharge_title" >
+
+        <com.xiaomi.parts.preferences.SecureSettingSwitchPreference
+            android:key="fastcharge"
+            android:defaultValue="true" 
+            android:title="@string/fastcharge_title" 
+            android:icon="@drawable/ic_usb_fastcharge" 
+            android:summary="@string/fastcharge_summary" />
 
     </PreferenceCategory>
 
