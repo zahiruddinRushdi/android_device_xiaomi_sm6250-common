@@ -114,7 +114,7 @@
 
         <service android:name=".StartAction" />
         <service
-            android:name=".DiracService"
+            android:name=".MiService"
             android:enabled="true"
             android:stopWithTask="false" />
 
