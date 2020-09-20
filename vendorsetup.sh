@@ -1,0 +1,2 @@
+export SHIP_LAWNCHAIR=true
+export SELINUX_IGNORE_NEVERALLOWS=true
