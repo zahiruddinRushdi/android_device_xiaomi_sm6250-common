@@ -69,9 +69,6 @@
     <string name="mi_preset_dance">Dance</string>
     <string name="mi_preset_metal">Metal</string>
 
-    <!-- Mi Sound QS tile -->
-    <string name="mi_qs_tile_title">Mi Sound</string>
-
     <!-- kcal -->
     <string name="advanced_settings_kcal">Display Color Calibration</string>
     <string name="cat_colormanagement">Color Settings</string>
