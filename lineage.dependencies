@@ -14,5 +14,12 @@
     "repository": "SonalSingh18/vendor_aeonax_ANXCamera",
     "target_path": "vendor/aeonax/ANXCamera",
     "branch": "ten"
+  },
+  {
+    "remote": "pixel-gitlab",
+    "repository": "packages_apps_PixelLiveWallpaper",
+    "target_path": "packages/apps/PixelLiveWallpaper",
+    "branch": "ten"
   }
 ]
+
