@@ -17,7 +17,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # ANXCamera
-$(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
+#$(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
+$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
