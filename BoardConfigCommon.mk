@@ -41,6 +41,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_USES_PREBUILT_CAMERA_SERVICE := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -208,6 +210,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # ANXCamera
 -include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
+# MiuiCamera
+-include vendor/miuicamera/common/BoardConfigVendor.mk
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk

@@ -16,6 +16,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# MiuiCamera
+ifeq ($(SHIP_MICAM),true)
+$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
+endif
+
 # ANXCamera
 ifeq ($(SHIP_ANX),true)
 $(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
