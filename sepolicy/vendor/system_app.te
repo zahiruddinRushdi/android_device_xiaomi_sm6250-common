@@ -13,3 +13,6 @@ allow system_app sysfs_fps:file rw_file_perms;
 
 # Touchboost
 allow system_app sysfs_touchboost:file { open read getattr write };
+
+# Fastcharge mode
+allow system_app sysfs_fcharge_mode:file { open read getattr write };

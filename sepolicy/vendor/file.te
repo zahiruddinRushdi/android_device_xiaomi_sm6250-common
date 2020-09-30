@@ -19,3 +19,6 @@ type sysfs_fps, sysfs_type, fs_type;
 
 # Touchboost
 type sysfs_touchboost, sysfs_type, fs_type;
+
+# Fastcharge mode
+type sysfs_fcharge_mode, sysfs_type, fs_type;
