@@ -19,3 +19,6 @@
 
 # Touchboost
 /sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0
+
+# Sensors
+/vendor/bin/hw/android\.hardware\.sensors@1\.0-service u:object_r:hal_sensors_default_exec:s0
