@@ -251,7 +251,6 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
-vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
 vendor/bin/hw/qcrild
@@ -382,7 +381,6 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc
-vendor/etc/init/android.hardware.ir@1.0-service.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
 vendor/etc/init/cnd.rc
@@ -595,7 +593,6 @@ vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/egl/libQTapGLES.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gnss@2.0-impl-qti.so
-vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/audio.primary.atoll.so
 vendor/lib/hw/camera.qcom.so
@@ -1082,7 +1079,6 @@ vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so
-vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.primary.atoll.so
 vendor/lib64/hw/camera.qcom.so
