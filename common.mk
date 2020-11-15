@@ -232,6 +232,11 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/xiaomi
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-service \
+    android.hardware.thermal@1.0-impl.so
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
